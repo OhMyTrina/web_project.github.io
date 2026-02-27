@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: optima, sans-serif;
+    background: rgb(220, 220, 220);
+    color: rgb(93, 111, 124);
+    line-height: 1.6;
+    padding: 4rem 2rem;
+}
+
+.masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-bottom: 5em;
+}
+
+.masthead p {
+    font-size: 1.5em;
+    color: rgb(93, 111, 124);
+    padding: 1em;
+}
+
+.intro h1 {
+    font-size: 13em;
+    text-align: left;
+    padding-left: 0.1em;
+    border-bottom: 1.5px solid rgb(93, 111, 124);
+}
+
+.intro p {
+    font-size: 25px;
+    padding-top: 1.1em;
+    padding-left: 20.3em;
+    padding-right: 23em;
+    padding-bottom: 2.8em;
+    border-bottom: 1.5px solid rgb(93, 111, 124);
+}
+
+.name {
+    font-size: 1em;
+    text-align: right;
+    padding-top: 1em;
+    text-transform: uppercase;
+}
+
+.colourchange {
+    font-size: 5em;
+    padding-top: 60px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.letters {
+    width: 200px;
+    height: 220px;
+    font-size: 100px;
+    font-weight: bold;
+    background-color: rgb(152, 152, 152);
+    transition: background-color 0.3s ease;
+    padding-top: 30px;
+    color: rgb(93, 111, 124);
+}
+
+.letter-e:hover {
+    
+    background-color: #D99ca5;
+    color:#943636;
+}
+.letter-i:hover {
+    background-color: #Edcb9c;
+    color:#a85a29;
+}
+.letter-s:hover {
+    background-color: #efefa8;
+    color:#bcac5d;
+}
+.letter-n:hover {
+    background-color: #c2e0ae;
+    color:#6abc5d;
+}
+.letter-t:hover {
+    background-color: #8fc2df;
+    color:#4588b1;
+}
+.letter-f:hover {
+    background-color: #8f9edf;
+    color:#6d5dbc;
+}
+.letter-j:hover {
+    background-color: #a19ad1;
+    color:#935dbc;
+}
+.letter-p:hover {
+    background-color: rgb(194, 152, 217);
+    color:#bc5dba;
+}
+
+a {
+    justify-content: center;
+    display: flex;
+    font-size: 1em;
+    padding: 4em 4em;
+}

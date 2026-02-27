@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 65%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+body {
+    font-family: optima, sans-serif;
+    font-size: 12px;
+    background: radial-gradient(circle, #8d66a0, 80%, rgb(220, 220, 220));
+    /* height: 100vh; */
+    color: #36263e;
+    line-height: 23px;
+    /* padding: 40px 20px; */
+}
+
+.masthead {
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-bottom: 7em;
+    gap: 15px;
+}
+
+.masthead a {
+    font-size: 50px;
+    font-weight: bold;
+    color: #36263e;
+    text-decoration: none;
+}
+
+.masthead p {
+    font-size: 16px;
+    width: 160px;
+    height: 45px;
+    color: #36263e;
+    transition: text-decoration 0.3s ease #36263e;
+    border-left: 1.5px solid #36263e;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.masthead p:hover {
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #36263e;
+}
+
+.title h1 {
+    font-size: 16px;
+    padding-left: 37px;
+    color: #36263e;
+}
+
+.title h2 {
+    font-size: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    color: #36263e;
+    /* border-bottom: 0.7px solid #36263e; */
+}
+
+.title p {
+    font-size: 16px;
+    padding-left: 37px;
+    padding-bottom: 35px;
+    border-bottom: 0.7px solid #36263e;
+}
+
+.title h4 {
+    font-size: 16px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 305px;
+    padding-right: 140px;
+    text-transform: capitalize;
+    line-height: 21px;
+    color: #36263e;
+    border-bottom: 0.7px solid #36263e;
+}
+
+.content_intro p {
+    font-size: 14px;
+    padding-left: 305px;
+    padding-right: 140px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    color: rgb(220, 220, 220);
+    border-bottom: 0.7px solid #36263e;
+}
+
+.content h1 {
+    font-size: 43px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding-top: 70px;
+    padding-bottom: 68px;
+    border-bottom: 0.7px solid #36263e;
+}
+
+.good h2 {
+    font-size: 25px;
+    padding-left: 167px;
+    padding-right: 140px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    border-bottom: 0.7px solid #36263e;
+
+}
+
+.bad h2 {
+    font-size: 25px;
+    padding-left: 139px;
+    padding-right: 140px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    border-bottom: 0.7px solid #36263e;
+
+}
+
+
+
+.good h3,
+.bad h3 {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 305px;
+    padding-right: 140px;
+    text-transform: uppercase;
+    color: rgb(220, 220, 220);
+}
+
+.good,
+.bad {
+    border-bottom: 0.7px solid #36263e;
+    padding-bottom: 40px;
+}
+
+.good p,
+.bad p {
+    font-size: 14px;
+    padding-left: 305px;
+    padding-right: 140px;
+    color: rgb(220, 220, 220);
+}
+
+.button-container {
+    padding-top: 30px;
+    padding-bottom: 35px;
+    text-align: right;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.button-container:hover {
+    transform: scale(1.1);
+}
+
+.external-btn {
+    color: #36263e;
+    padding: 11px 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+}
+
+.external-btn:hover {
+    color: #ffffff;
+}
