@@ -19,6 +19,31 @@ body {
     /* background: radial-gradient(#555555, #ffffff); */
     color: #000000;
     line-height: 18px;
+
+    background-size: 200% 200%;
+    animation: drift 10s ease-in-out infinite;
+}
+
+@keyframes drift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
 }
 
 .masthead {
@@ -91,7 +116,6 @@ body {
     gap: 12px;
     justify-content: center;
     padding: 25px;
-    padding-bottom: 28px;
     border-bottom: 0.7px solid #000000;
 }
 
@@ -114,7 +138,9 @@ body {
 .letter-p {
     width: 100px;
     height: 105px;
-    color: #efefa8;
+    color: #fff;
+    mix-blend-mode: multiply;
+    /*white text transparent*/
     background-color: #000000;
     border: 0;
     display: flex;
@@ -214,7 +240,7 @@ body {
 .content-f,
 .content-j,
 .content-p {
-    background: #ffffff;
+    background: #dfdfdf;
     padding-top: 30px;
     width: 60em;
     height: 38em;
@@ -275,43 +301,9 @@ body {
     /* text-transform: uppercase; */
 }
 
-/* purple */
-.grid1 {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    align-items: baseline center;
-    border-bottom: 0.7px solid #000000;
-}
-
-/* green */
-.grid2 {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    align-items: baseline center;
-    border-bottom: 0.7px solid #000000;
-}
-
-/* blue */
-.grid3 {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 40px;
-    align-items: baseline center;
-    border-bottom: 0.7px solid #000000;
-}
-
-/* yellow */
+.grid1,
+.grid2,
+.grid3,
 .grid4 {
     display: flex;
     justify-content: center;
@@ -319,15 +311,22 @@ body {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 40px;
-    align-items: baseline center;
+    align-items: flex-start;
     border-bottom: 0.7px solid #000000;
 }
 
-.grid-image img {
-    height: 230px;
-    object-fit: contain;
+.grid-image {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+}
+
+.grid-image img {
+    height: 240px;
+    display: inline-block;
+    object-fit: contain;
+    object-position: bottom;
     transition: transform 0.3s ease
 }
 
@@ -341,17 +340,11 @@ body {
     font-size: 17px;
 }
 
-.esfj {
-    width: 195px;
-}
-
 .grid-image p {
     padding-top: 10px;
     font-size: 11.5px;
     line-height: 16.5px;
     width: 180px;
-    display: flex;
-    justify-content: center;
 }
 
 .personalitytest h1 {
@@ -383,7 +376,8 @@ body {
 /* button */
 .external-btn {
     background: #000000;
-    color: #8fc2df;
+    color: #fff;
+    mix-blend-mode: multiply;
     padding: 11px 0;
     width: 170px;
     height: 40px;
@@ -402,13 +396,19 @@ body {
     text-decoration: underline;
 }
 
+.references h1 {
+    font-size: 8px;
+    font-weight: bold;
+    text-align: right;
+    padding-top: 0.5em;
+}
 
 .references p {
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 50px;
-
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 1px;
     font-size: 10px;
     /* padding: 50px; */
     color: #000000;

@@ -3,7 +3,7 @@
 
 <head>
     <title>ENTJ.</title>
-    <link rel="stylesheet" href="../HTML&CSS/P_ENTJ.css">
+    <link rel="stylesheet" href="../HTML&CSS/Purple.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
@@ -21,7 +21,47 @@
         <!-- back to home page link -->
         <header class="masthead">
             <a href="../index.html">mbti.</a>
-            <p>Personality-types</p>
+
+            <div class="popup-container">
+                <button class="button">Personality-types</button>
+
+                <div class="popup-window">
+                    <ul>
+                        <li><a href="/HTML&CSS/P_ENTJ.html">ENTJ.</a></li>
+                        <!-- 1. -->
+                        <li><a href="/HTML&CSS/P_ENTP.html">ENTP.</a></li>
+                        <!-- 2. -->
+                        <li><a href="/HTML&CSS/P_INTJ.html">INTJ.</a></li>
+                        <!-- 3. -->
+                        <li><a href="/HTML&CSS/P_INTP.html">INTP.</a></li>
+                        <!-- 4. -->
+                        <li><a href="/HTML&CSS/G_ENFJ.html">ENFJ.</a></li>
+                        <!-- 5. -->
+                        <li><a href="/HTML&CSS/G_ENFP.html">ENFP.</a></li>
+                        <!-- 6. -->
+                        <li><a href="/HTML&CSS/G_INFJ.html">INFJ.</a></li>
+                        <!-- 7. -->
+                        <li><a href="/HTML&CSS/G_INFP.html">INFP.</a></li>
+                        <!-- 8. -->
+                        <li><a href="/HTML&CSS/B_ESFJ.html">ESFJ.</a></li>
+                        <!-- 9. -->
+                        <li><a href="/HTML&CSS/B_ESTJ.html">ESTJ.</a></li>
+                        <!-- 10. -->
+                        <li><a href="/HTML&CSS/B_ISFJ.html">ISFJ.</a></li>
+                        <!-- 11. -->
+                        <li><a href="/HTML&CSS/B_ISTJ.html">ISTJ.</a></li>
+                        <!-- 12. -->
+                        <li><a href="/HTML&CSS/Y_ESFP.html">ESFP.</a></li>
+                        <!-- 13. -->
+                        <li><a href="/HTML&CSS/Y_ESTP.html">ESTP.</a></li>
+                        <!-- 14. -->
+                        <li><a href="/HTML&CSS/Y_ISFP.html">ISFP.</a></li>
+                        <!-- 15. -->
+                        <li><a href="/HTML&CSS/Y_ISTP.html">ISTP.</a></li>
+                        <!-- 16. -->
+                </div>
+
+            </div>
         </header>
 
         <div class="title">
@@ -69,7 +109,7 @@
                     feel
                     confident facing life’s day-to-day challenges.</p>
                 <h3>Strong-Willed</h3>
-                <p>eople with the ENTJ personality type don’t give up when the going gets
+                <p>People with the ENTJ personality type don’t give up when the going gets
                     tough.
                     Instead,
                     they relentlessly strive to achieve their goals. Nothing is quite as satisfying to them as
@@ -110,7 +150,7 @@
                     is a challenge for most other personality types, who are perhaps not timid in their own right but
                     will seem so beside this sometimes overbearing type.</p>
                 <h3>Poor Handling of Emotions</h3>
-                <p>t times, ENTJ personalities can be distant from their own emotional expression and sometimes
+                <p>ENTJ personalities can be distant from their own emotional expression and sometimes
                     downright scornful of others’. People with this personality type often trample others’ feelings,
                     inadvertently hurting their partners and friends, especially in emotionally charged situations.</p>
                 <h3>Cold and Ruthless</h3>
@@ -127,6 +167,20 @@
     </div>
     </div>
 
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                entry.target.classList.toggle("show", entry.isIntersecting);
+                // if (entry.isIntersecting) observer.unobserve(entry.target);// Keeps it visible once shown
+            });
+        }, {
+            threshold: 0.8 // Triggers when 50% of the element is visible
+        });
+
+        const hiddenElements = document.querySelectorAll('.content p, .content h3, .content h2, .content h1');
+        hiddenElements.forEach((el) => observer.observe(el));
+        // https://www.youtube.com/watch?v=2IbRtjez6ag
+    </script>
 </body>
 
 </html>

@@ -14,12 +14,52 @@
 body {
     font-family: optima, sans-serif;
     font-size: 12px;
-    background: radial-gradient(circle, #8d66a0, 80%, rgb(220, 220, 220));
+    background: radial-gradient(circle, #53987b, rgb(74, 164, 101), 50%, #7fc199, rgb(220, 220, 220));
+    /* animation: expand 10s ease-in-out infinite; */
+    animation: drift 10s ease-in-out infinite;
+    background-size: 200% 200%;
+    background-position: center;
     /* height: 100vh; */
-    color: #36263e;
+    color: #1e4538;
     line-height: 23px;
     /* padding: 40px 20px; */
 }
+
+@keyframes drift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    75% {
+        background-position: 0% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* @keyframes expand {
+    0% {
+        background-size: 100% 100%;
+    }
+
+    50% {
+        background-size: 180% 180%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+} */
 
 .masthead {
     display: flex;
@@ -32,34 +72,84 @@ body {
 .masthead a {
     font-size: 50px;
     font-weight: bold;
-    color: #36263e;
+    color: #1e4538;
     text-decoration: none;
+    padding-right: 20px;
 }
 
-.masthead p {
+
+.popup-container {
+    position: relative;
+    display: inline-block;
+}
+
+.popup-container button {
     font-size: 16px;
+    font-family: optima, sans-serif;
     width: 160px;
     height: 45px;
-    color: #36263e;
-    transition: text-decoration 0.3s ease #36263e;
-    border-left: 1.5px solid #36263e;
-
-
+    color: #1e4538;
+    border: transparent;
+    background-color: transparent;
+    border-left: 1.5px solid #1e4538;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
-.masthead p:hover {
+.popup-container:hover button {
     cursor: pointer;
     color: #ffffff;
-    background-color: #36263e;
+    background-color: #1e4538;
 }
+
+.popup-window {
+    display: none;
+    position: absolute;
+    background-color: #1e4538;
+    border: 1px solid #1e4538;
+    width: 500px;
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.popup-container:hover .popup-window {
+    display: block;
+}
+
+.popup-window ul {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    /* 4 columns */
+    grid-template-rows: repeat(4, auto);
+    /* 4 rows */
+    gap: 20px;
+    justify-items: center;
+    list-style: none;
+    padding: 10px;
+    /* margin: 0; */
+    height: 100%;
+}
+
+.popup-window a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: optima, sans-serif;
+    font-size: 18px;
+}
+
+.popup-window a:hover {
+    text-decoration: underline;
+    color: #458d6b}
+
 
 .title h1 {
     font-size: 16px;
     padding-left: 37px;
-    color: #36263e;
+    color: #1e4538;
 }
 
 .title h2 {
@@ -67,7 +157,7 @@ body {
     padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 30px;
-    color: #36263e;
+    color: #1e4538;
     /* border-bottom: 0.7px solid #36263e; */
 }
 
@@ -75,7 +165,7 @@ body {
     font-size: 16px;
     padding-left: 37px;
     padding-bottom: 35px;
-    border-bottom: 0.7px solid #36263e;
+    border-bottom: 0.7px solid #1e4538;
 }
 
 .title h4 {
@@ -86,8 +176,8 @@ body {
     padding-right: 140px;
     text-transform: capitalize;
     line-height: 21px;
-    color: #36263e;
-    border-bottom: 0.7px solid #36263e;
+    color: #1e4538;
+    border-bottom: 0.7px solid #1e4538;
 }
 
 .content_intro p {
@@ -97,7 +187,20 @@ body {
     padding-top: 35px;
     padding-bottom: 35px;
     color: rgb(220, 220, 220);
-    border-bottom: 0.7px solid #36263e;
+    border-bottom: 0.7px solid #1e4538;
+}
+
+.content p,
+.content h3,
+.content h2 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+.content .show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .content h1 {
@@ -108,7 +211,12 @@ body {
     font-style: italic;
     padding-top: 70px;
     padding-bottom: 68px;
-    border-bottom: 0.7px solid #36263e;
+    border-bottom: 0.7px solid #1e4538;
+
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+
 }
 
 .good h2 {
@@ -117,7 +225,7 @@ body {
     padding-right: 140px;
     padding-top: 40px;
     padding-bottom: 35px;
-    border-bottom: 0.7px solid #36263e;
+    border-bottom: 0.7px solid #1e4538;
 
 }
 
@@ -127,7 +235,7 @@ body {
     padding-right: 140px;
     padding-top: 40px;
     padding-bottom: 35px;
-    border-bottom: 0.7px solid #36263e;
+    border-bottom: 0.7px solid #1e4538;
 
 }
 
@@ -146,7 +254,7 @@ body {
 
 .good,
 .bad {
-    border-bottom: 0.7px solid #36263e;
+    border-bottom: 0.7px solid #1e4538;
     padding-bottom: 40px;
 }
 
@@ -171,7 +279,7 @@ body {
 }
 
 .external-btn {
-    color: #36263e;
+    color: #1e4538;
     padding: 11px 0;
     text-align: center;
     text-decoration: none;

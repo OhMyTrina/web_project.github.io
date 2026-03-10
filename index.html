@@ -10,13 +10,15 @@
         /* Phone */
         @media (min-width: 400px) and (max-width: 699px) {
             .container {
-                width: 20%;
+                width: 100%;
                 min-width: 400px;
             }
 
             body {
                 line-height: 12px;
                 padding: 30px;
+                background-size: 100% 100%;
+
             }
 
             .masthead {
@@ -59,8 +61,7 @@
 
             .letters {
                 gap: 1px;
-                padding: 5px;
-                padding-bottom: 7px;
+                padding: 2px;
             }
 
 
@@ -162,10 +163,6 @@
                 font-size: 10px;
             }
 
-            .esfj {
-                width: 85px;
-            }
-
             .grid-image p {
                 padding-top: 5px;
                 font-size: 8px;
@@ -200,9 +197,11 @@
                 font-size: 7px;
             }
 
+            .references h1 {
+                font-size: 5px;
+            }
+
             .references p {
-                padding-top: 10px;
-                padding-bottom: 30px;
                 font-size: 6px;
             }
         }
@@ -398,8 +397,10 @@
             }
 
             .references p {
-                padding-top: 15px;
-                padding-bottom: 30px;
+                font-size: 8px;
+            }
+
+            .references h1 {
                 font-size: 8px;
             }
 
@@ -465,13 +466,13 @@
                 <!-- Group 2 -->
                 <div class="letter-group">
                     <button class="letters letter-i">I</button>
-                    <h1>Introvesion</h1>
+                    <h1>Introversion</h1>
 
                     <!-- new popup content -->
                     <div class="popup">
                         <div class="content-i">
                             <img src="SVG_MBTI/SVG/I.svg">
-                            <h2>Introvesion (I)</h2>
+                            <h2>Introversion (I)</h2>
                             <p>Introverted individuals prefer solitary activities and get exhausted by social
                                 interaction.<br>They tend to be quite sensitive to external stimulation (e.g. sound,
                                 sight
@@ -603,7 +604,7 @@
                 </div>
                 <div class="grid-image">
                     <div class="entp">
-                        <a href="https://www.16personalities.com/entp-personality">
+                        <a href="HTML&CSS/P_ENTP.html">
                             <img src="SVG_MBTI/SVG/P_ENTP.svg" alt="Grid image 2"></a>
                         <h1>Debater - ENTP</h1>
                         <p>Debaters are curious and flexible thinkers who cannot resist an intellectual challenge.</p>
@@ -631,10 +632,10 @@
             <div class="grid2">
                 <div class="grid-image">
                     <div class="enfj">
-                        <a href="https://www.16personalities.com/enfj-personality">
+                        <a href="HTML&CSS/G_ENFJ.html">
                             <img src="SVG_MBTI/SVG/G_ENFJ.svg" alt="Grid image 1"></a>
                         <h1>Protagonist - ENFJ</h1>
-                        <p>CProtagonists are inspiring optimists, readily taking action to do what they feel is right.
+                        <p>Protagonists are inspiring optimists, readily taking action to do what they feel is right.
                         </p>
                     </div>
                 </div>
@@ -656,7 +657,7 @@
                 </div>
                 <div class="grid-image">
                     <div class="infp">
-                        <a href="https://www.16personalities.com/infp-personality">
+                        <a href="HTML&CSS/G_INFP.html">
                             <img src="SVG_MBTI/SVG/G_INFP.svg" alt="Grid image 4"></a>
                         <h1>Mediator - INFP</h1>
                         <p>Mediators are poetic, kind, and altruistic people, always eager to help a good cause.</p>
@@ -758,16 +759,28 @@
 
         <!-- references -->
         <footer class="references">
+            <h1>References</h1>
             <p>
-                <a href="https://www.16personalities.com/personality-types">Images from: 16personalities</a>
+                <a href="https://www.16personalities.com/personality-types">Images & Contents from: 16personalities</a>
+                <a href="https://www.w3schools.com/css/css3_animations.asp">w3school:CSS Animations</a>
+                <a href="https://tailwindcss.com/docs/mask-image">tailwindcss:mask-image</a>
+                <a href="https://medium.com/@AppCode/how-to-hover-zoom-on-an-image-with-css-scale-bc30a06ebbed">Medium:
+                    CSS Scale</a>
+                <a
+                    href="https://medium.com/@szz185/the-magic-of-css-blend-modes-making-text-pop-on-any-background-5bee1c27f302">Medium:
+                    CSS Blend Modes</a>
+            </p>
+            <p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-within">Mozilla:
+                    :focus-within</a>
                 <a
                     href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Transitions/Using#:~:text=view%20code-,html,200px;%20rotate:%20180deg;%20%7D">Mozilla:
                     Using CSS transitions</a>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Selectors/:focus-within">Mozilla:
-                    :focus-within</a>
-                <a href="https://tailwindcss.com/docs/mask-image">tailwindcss:mask-image</a>
-                <a href="https://medium.com/@AppCode/how-to-hover-zoom-on-an-image-with-css-scale-bc30a06ebbed">Medium:
-                    How To Hover Zoom on an Image With CSS Scale</a>
+                <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/radial-gradient#:~:text=%E4%B8%AD%E6%96%87%20(%E7%AE%80%E4%BD%93)-,radial%2Dgradient(),special%20kind%20of%20.">Mozilla:
+                    radial-gradient()</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@keyframes">Mozilla:
+                    @keyframes</a>
             </p>
 
         </footer>
