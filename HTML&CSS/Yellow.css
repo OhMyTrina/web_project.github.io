@@ -14,7 +14,7 @@
 body {
     font-family: optima, sans-serif;
     font-size: 12px;
-    background: radial-gradient(circle, #fce270, #d0a825, 50%, #eed276, rgb(220, 220, 220));
+    background: radial-gradient(circle, #f6d853, #ddb42d, 50%, #eed276, rgb(220, 220, 220));
     /* animation: expand 10s ease-in-out infinite; */
     animation: drift 10s ease-in-out infinite;
     background-size: 200% 200%;
@@ -187,7 +187,7 @@ body {
     padding-right: 140px;
     padding-top: 35px;
     padding-bottom: 35px;
-    color: #655e4c;
+    color: #000;
     border-bottom: 0.7px solid #4e4736;
 }
 
@@ -249,7 +249,7 @@ body {
     padding-left: 305px;
     padding-right: 140px;
     text-transform: uppercase;
-    color: rgb(220, 220, 220);
+    color: #000;
 }
 
 .good,
@@ -263,7 +263,7 @@ body {
     font-size: 14px;
     padding-left: 305px;
     padding-right: 140px;
-    color: rgb(220, 220, 220);
+    color: #000;
 }
 
 .button-container {

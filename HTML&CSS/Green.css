@@ -186,7 +186,7 @@ body {
     padding-right: 140px;
     padding-top: 35px;
     padding-bottom: 35px;
-    color: rgb(220, 220, 220);
+    color: #000;
     border-bottom: 0.7px solid #1e4538;
 }
 
@@ -249,7 +249,7 @@ body {
     padding-left: 305px;
     padding-right: 140px;
     text-transform: uppercase;
-    color: rgb(220, 220, 220);
+    color: #000;
 }
 
 .good,
@@ -263,7 +263,7 @@ body {
     font-size: 14px;
     padding-left: 305px;
     padding-right: 140px;
-    color: rgb(220, 220, 220);
+    color: #000;
 }
 
 .button-container {
