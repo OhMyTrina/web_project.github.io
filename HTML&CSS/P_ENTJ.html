@@ -7,6 +7,332 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        /* Phone */
+        @media (min-width: 400px) and (max-width: 699px) {
+            .container {
+                width: 80%;
+                max-width: 699px;
+                padding: 20px;
+            }
+
+            body {
+                font-size: 8px;
+                line-height: 12px;
+            }
+
+            @keyframes drift {
+                0% {
+                    background-position: 0% 0%;
+                }
+
+                25% {
+                    background-position: 100% 0%;
+                }
+
+                50% {
+                    background-position: 100% 100%;
+                }
+
+                75% {
+                    background-position: 0% 100%;
+                }
+
+                100% {
+                    background-position: 0% 0%;
+                }
+            }
+
+            .masthead {
+                padding-left: 2.5px;
+                padding-bottom: 2.5em;
+                gap: 5px;
+            }
+
+            .masthead a {
+                font-size: 18px;
+                padding-right: 6.5px;
+            }
+
+            .popup-container button {
+                font-size: 8px;
+                width: 80px;
+                height: 15px;
+                border-left: 0.5px solid #4e4736;
+            }
+
+            .popup-window {
+                border: 0.3px solid #4e4736;
+                width: 300px;
+                height: 150px;
+                padding: 10px;
+                box-shadow: 0 2px 2.4px rgba(0, 0, 0, 0.1);
+            }
+
+            .popup-window ul {
+                padding: 5px;
+                height: 100%;
+            }
+
+            .popup-window a {
+                font-size: 12px;
+            }
+
+            .title h1 {
+                font-size: 6px;
+                padding-left: 12.5px;
+            }
+
+            .title h2 {
+                font-size: 33px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+
+            .title p {
+                font-size: 8px;
+                padding-left: 12.5px;
+                padding-bottom: 11px;
+                border-bottom: 0.25px solid #4e4736;
+            }
+
+            .title h4 {
+                font-size: 6px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 100px;
+                padding-right: 50px;
+                line-height: 9px;
+                border-bottom: 0.25px solid #4e4736;
+            }
+
+            .content_intro p {
+                font-size: 6px;
+                padding-left: 102px;
+                padding-right: 46px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-bottom: 0.25px solid #4e4736;
+            }
+
+            .content p,
+            .content h3,
+            .content h2 {
+                transform: translateY(10px);
+            }
+
+            .content h1 {
+                font-size: 20px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-bottom: 0.25px solid #4e4736;
+                transform: translateY(10px);
+            }
+
+            .good h2 {
+                font-size: 12px;
+                padding-left: 30px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-bottom: 0.25px solid #4e4736;
+            }
+
+            .bad h2 {
+                font-size: 12px;
+                padding-left: 15px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-bottom: 0.25px solid #4e4736;
+            }
+
+
+
+            .good h3,
+            .bad h3 {
+                font-size: 7px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 100px;
+                padding-right: 10px;
+            }
+
+            .good,
+            .bad {
+                border-bottom: 0.25px solid #4e4736;
+                padding-bottom: 18px;
+            }
+
+            .good p,
+            .bad p {
+                font-size: 7px;
+                padding-left: 102px;
+                padding-right: 46.5px;
+            }
+
+            .button-container {
+                padding-top: 10px;
+                padding-bottom: 11.5px;
+            }
+
+            .external-btn {
+                padding: 3.3px 0;
+                font-size: 8px;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 700px) and (max-width: 999px) {
+            .container {
+                width: 70%;
+                max-width: 999px;
+                padding: 40px;
+            }
+
+            body {
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            .masthead {
+                padding-left: 5px;
+                padding-bottom: 5em;
+                gap: 10px;
+            }
+
+            .masthead a {
+                font-size: 36px;
+                padding-right: 13px;
+            }
+
+            .popup-container button {
+                font-size: 16px;
+                width: 160px;
+                height: 30px;
+                border-left: 1px solid #4e4736;
+            }
+
+            .popup-window {
+                border: 0.6px solid #4e4736;
+                width: 600px;
+                height: 300px;
+                padding: 20px;
+                box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .popup-window ul {
+                padding: 10px;
+            }
+
+            .popup-window a {
+                font-size: 24px;
+            }
+
+            .title h1 {
+                font-size: 12px;
+                padding-left: 25px;
+            }
+
+            .title h2 {
+                font-size: 66px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 20px;
+            }
+
+            .title p {
+                font-size: 16px;
+                padding-left: 25px;
+                padding-bottom: 22px;
+                border-bottom: 0.5px solid #4e4736;
+            }
+
+            .title h4 {
+                font-size: 12px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-left: 200px;
+                padding-right: 100px;
+                line-height: 18px;
+                border-bottom: 0.5px solid #4e4736;
+            }
+
+            .content_intro p {
+                font-size: 12px;
+                padding-left: 205px;
+                padding-right: 90px;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-bottom: 0.5px solid #4e4736;
+            }
+
+            .content p,
+            .content h3,
+            .content h2 {
+                transform: translateY(20px);
+            }
+
+            .content h1 {
+                font-size: 40px;
+                padding-top: 60px;
+                padding-bottom: 60px;
+                border-bottom: 0.65px solid #4e4736;
+                transform: translateY(20px);
+            }
+
+            .good h2 {
+                font-size: 25px;
+                padding-left: 60px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                border-bottom: 0.5px solid #4e4736;
+            }
+
+            .bad h2 {
+                font-size: 25px;
+                padding-left: 35px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                border-bottom: 0.5px solid #4e4736;
+
+            }
+
+
+
+
+
+            .good h3,
+            .bad h3 {
+                font-size: 12px;
+                padding-top: 20px;
+                padding-bottom: 16px;
+                padding-left: 200px;
+                padding-right: 20px;
+            }
+
+            .good,
+            .bad {
+                border-bottom: 0.5px solid #4e4736;
+                padding-bottom: 36px;
+            }
+
+            .good p,
+            .bad p {
+                font-size: 12px;
+                padding-left: 200px;
+                padding-right: 90px;
+            }
+
+            .button-container {
+                padding-top: 20px;
+                padding-bottom: 22px;
+            }
+
+            .external-btn {
+                padding: 6.6px 0;
+                font-size: 16px;
+            }
+        }
+
         /* Full Screen */
         @media (min-width: 1000px) {
             .container {
