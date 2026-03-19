@@ -16,7 +16,7 @@
 
             body {
                 line-height: 12px;
-                padding: 30px;
+                padding: 1px;
                 background-size: 100% 100%;
 
             }
@@ -39,7 +39,7 @@
                 font-size: 7px;
                 padding-top: 2px;
                 padding-left: 130px;
-                padding-right: 70px;
+                padding-right: 40px;
                 padding-bottom: 17px;
             }
 
@@ -60,8 +60,8 @@
             }
 
             .letters {
-                gap: 1px;
-                padding: 2px;
+                gap: 5px;
+                padding: 1px;
             }
 
 
@@ -79,10 +79,19 @@
             }
 
             .letter-group h1 {
-                width: 50px;
+                width: 40px;
                 padding-top: 8px;
                 padding-bottom: 8px;
                 font-size: 7px;
+            }
+
+            .popup {
+                display: none;
+            }
+
+
+            .letter-group:focus-within .popup {
+                display: flex;
             }
 
             .content-e,
@@ -148,7 +157,7 @@
             .grid2,
             .grid3,
             .grid4 {
-                gap: 20px;
+                gap: 16px;
                 width: 100%;
                 padding-top: 20px;
                 padding-bottom: 20px;
@@ -160,7 +169,7 @@
 
             .grid-image h1 {
                 padding-top: 10px;
-                font-size: 10px;
+                font-size: 9px;
             }
 
             .grid-image p {
@@ -761,7 +770,8 @@
         <footer class="references">
             <h1>References</h1>
             <p>
-                <a href="https://www.16personalities.com/personality-types">Images & Content Information Source: 16personalities</a>
+                <a href="https://www.16personalities.com/personality-types">Images & Content Information Source:
+                    16personalities</a>
                 <a href="https://www.w3schools.com/css/css3_animations.asp">W3school:CSS Animations</a>
                 <a href="https://tailwindcss.com/docs/mask-image">Tailwindcss:mask-image</a>
                 <a href="https://medium.com/@AppCode/how-to-hover-zoom-on-an-image-with-css-scale-bc30a06ebbed">Medium:
