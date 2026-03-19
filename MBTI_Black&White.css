@@ -224,6 +224,8 @@ body {
     z-index: 10;
     justify-content: center;
     align-items: center;
+
+    pointer-events: none; 
 }
 
 /* Show popup when letter-group clicked */
@@ -250,6 +252,7 @@ body {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.3);
     color: #000000;
     line-height: 20px;
+    pointer-events: auto; 
 }
 
 .content-e img,
