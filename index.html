@@ -17,8 +17,30 @@
             body {
                 line-height: 12px;
                 padding: 1px;
-                background-size: 100% 100%;
+                background-size: 180% 180%;
+                animation: drift 9s ease-in-out infinite;
+            }
 
+            @keyframes drift {
+                0% {
+                    background-position: 0% 0%;
+                }
+
+                25% {
+                    background-position: 100% 0%;
+                }
+
+                50% {
+                    background-position: 100% 100%;
+                }
+
+                75% {
+                    background-position: 0% 100%;
+                }
+
+                100% {
+                    background-position: 0% 0%;
+                }
             }
 
             .masthead {
@@ -101,12 +123,12 @@
             .content-f,
             .content-j,
             .content-p {
-                padding-top: 25px;
-                width: 280px;
-                height: 200px;
-                font-size: 6px;
+                padding: 25px;
+                width: 400px;
+                height: 300px;
+                font-size: 9px;
                 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
-                line-height: 8px;
+                line-height: 12px;
             }
 
             .content-e img,
@@ -117,13 +139,13 @@
             .content-f img,
             .content-j img,
             .content-p img {
-                width: 120px;
-                height: 100px;
+                width: 200px;
+                height: 180px;
             }
 
             .content-n img {
-                width: 130px;
-                height: 105px;
+                width: 230px;
+                height: 180px;
                 padding-right: 20px;
             }
 
@@ -198,8 +220,8 @@
 
             /* button */
             .external-btn {
-                padding: 3.12px 0;
-                width: 70px;
+                padding: 4px 0;
+                width: 90px;
                 height: 20px;
                 border-radius: 20px;
                 font-size: 7px;
@@ -222,16 +244,16 @@
             }
 
             body {
-                line-height: 16px;
+                line-height: 18px;
                 padding: 40px;
             }
 
             .masthead {
-                padding-bottom: 8em;
+                padding-bottom: 9em;
             }
 
             .masthead a {
-                font-size: 11px;
+                font-size: 10px;
             }
 
             .intro h1 {
@@ -244,29 +266,28 @@
                 font-size: 10px;
                 padding-top: 13px;
                 padding-left: 190px;
-                padding-right: 150px;
+                padding-right: 110px;
                 padding-bottom: 30px;
             }
 
             .intro h3,
             .colourchange-click h1 {
-                font-size: 5.5px;
+                font-size: 8px;
             }
 
             .intro h2 {
-                font-size: 14px;
-                padding-top: 28px;
-                padding-bottom: 28px;
+                font-size: 12px;
+                padding-top: 25px;
+                padding-bottom: 25px;
                 padding-left: 190px;
                 /* font-family: Georgia, 'Times New Roman', Times, serif; */
                 line-height: 17px;
-                border-bottom: 0.7px solid rgb(93, 111, 124);
             }
 
             .letters {
-                gap: 10px;
-                padding: 12px;
-                padding-bottom: 13px;
+                gap: 5px;
+                padding: 10px;
+                padding-bottom: 8px;
             }
 
 
@@ -278,17 +299,26 @@
             .letter-f,
             .letter-j,
             .letter-p {
-                width: 70px;
-                height: 75px;
+                width: 67px;
+                height: 70px;
                 font-size: 35px;
             }
 
             .letter-group h1 {
                 width: 70px;
-                padding-top: 20px;
-                padding-bottom: 25px;
+                padding-top: 10px;
+                padding-bottom: 20px;
                 font-size: 12px;
             }
+
+            .popup {
+                z-index: 30;
+            }
+
+            .letters:focus .popup {
+                display: block;
+            }
+
 
             .content-e,
             .content-i,
@@ -298,12 +328,12 @@
             .content-f,
             .content-j,
             .content-p {
-                padding-top: 22px;
-                width: 430px;
-                height: 300px;
-                font-size: 10px;
+                padding-top: 50px;
+                width: 650px;
+                height: 450px;
+                font-size: 12px;
                 box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
-                line-height: 14px;
+                line-height: 16px;
             }
 
             .content-e img,
@@ -314,16 +344,9 @@
             .content-f img,
             .content-j img,
             .content-p img {
-                width: 280px;
-                height: 190px;
+                width: 380px;
+                height: 280px;
             }
-
-            .content-n img {
-                width: 130px;
-                height: 105px;
-                padding-right: 20px;
-            }
-
             .content-e h2,
             .content-i h2,
             .content-s h2,
@@ -332,14 +355,14 @@
             .content-f h2,
             .content-j h2,
             .content-p h2 {
-                font-size: 10px;
+                font-size: 14px;
                 padding-bottom: 8px;
             }
 
             .part3-name {
-                font-size: 35px;
-                padding-top: 60px;
-                padding-bottom: 60px;
+                font-size: 40px;
+                padding-top: 70px;
+                padding-bottom: 70px;
             }
 
             .types-name {
@@ -351,14 +374,14 @@
             .grid2,
             .grid3,
             .grid4 {
-                gap: 40px;
+                gap: 20px;
                 width: 100%;
                 padding-top: 20px;
                 padding-bottom: 20px;
             }
 
             .grid-image img {
-                height: 120px;
+                height: 150px;
             }
 
             .grid-image h1 {
@@ -372,9 +395,9 @@
 
             .grid-image p {
                 padding-top: 8px;
-                font-size: 9px;
-                line-height: 12px;
-                width: 130px;
+                font-size: 10px;
+                line-height: 13.5px;
+                width: 140px;
             }
 
             .personalitytest h1 {
@@ -390,15 +413,15 @@
 
             /* para besides button */
             .button-container p {
-                padding: 20px;
+                padding: 10px;
                 font-size: 18px;
-                line-height: 22px;
+                line-height: 24px;
             }
 
             /* button */
             .external-btn {
-                padding: 8px 0;
-                width: 100px;
+                padding: 6px 0 10px;
+                width: 150px;
                 height: 30px;
                 border-radius: 20px;
                 font-size: 11px;
