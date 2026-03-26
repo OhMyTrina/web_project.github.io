@@ -6,6 +6,268 @@
     <link rel="stylesheet" href="about.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        /* Phone */
+        @media (min-width: 400px) and (max-width: 699px) {
+            .container {
+                width: 100%;
+                max-width: 699px;
+            }
+
+            body {
+                font-size: 10px;
+                line-height: 15px;
+            }
+
+            .masthead {
+                padding-left: 5px;
+                padding-bottom: 3em;
+                gap: 5px;
+            }
+
+            .masthead a {
+                font-size: 25px;
+                padding-right: 7px;
+            }
+
+            .about-window a {
+                font-size: 10px;
+                height: 20px;
+                padding-left: 5px;
+            }
+
+            .popup-container button {
+                font-size: 10px;
+                width: 100px;
+                height: 20px;
+            }
+
+            .popup-window {
+                width: 200px;
+                height: auto;
+                padding-left: 1px;
+                z-index: 20;
+            }
+
+            .popup-window ul {
+                grid-template-columns: repeat(2, auto);
+                grid-template-rows: repeat(4, auto);
+                gap: 12px;
+                line-height: 20px;
+                padding: 20px;
+            }
+
+            .popup-window a {
+                font-size: 15px;
+            }
+
+            .aboutdesigner h1 {
+                font-size: 20px;
+                padding-top: 40px;
+                padding-bottom: 10px;
+            }
+
+            .aboutdesigner p {
+                font-size: 10px;
+                padding-bottom: 15px;
+            }
+
+            .aboutdesigner h2 {
+                font-size: 11px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 102px;
+                padding-right: 1px;
+                line-height: 1.2;
+            }
+
+            .aboutdesigner h3 {
+                font-size: 10px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 102px;
+                padding-right: 0px;
+                line-height: 1.2;
+            }
+
+            .contactus h1 {
+                font-size: 20px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+
+            .contactus h2 {
+                font-size: 11px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 102px;
+                padding-right: 0px;
+                line-height: 1.2;
+            }
+
+            .contactus p {
+                font-size: 10px;
+                padding-bottom: 15px;
+                padding-left: 102px;
+                padding-right: 0px;
+                line-height: 1.2;
+            }
+
+            .FAQ h1 {
+                font-size: 20px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+            }
+
+            .FAQ h2 {
+                font-size: 11px;
+                padding-bottom: 10px;
+                padding-top: 15px;
+                line-height: 1.2;
+            }
+
+            .FAQ p {
+                font-size: 10px;
+                padding-bottom: 10px;
+                line-height: 1.2;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 700px) and (max-width: 999px) {
+            .container {
+                width: 80%;
+                max-width: 999px;
+                padding: 40px;
+            }
+
+            body {
+                font-size: 10px;
+                line-height: 20px;
+            }
+
+            .masthead {
+                padding-left: 5px;
+                padding-bottom: 5em;
+                gap: 10px;
+            }
+
+            .masthead a {
+                font-size: 40px;
+                padding-right: 13px;
+            }
+
+            .about-window a {
+                font-size: 16px;
+                height: 35px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .popup-container button {
+                font-size: 16px;
+                width: 170px;
+                height: 35px;
+                padding-left: 0px;
+            }
+
+            .popup-window {
+                width: 450px;
+                height: auto;
+                padding-left: 1px;
+                z-index: 20;
+            }
+
+            .popup-window ul {
+                gap: 12px;
+                line-height: 30px;
+                padding: 20px;
+            }
+
+            .popup-window a {
+                font-size: 18px;
+            }
+
+            .aboutdesigner h1 {
+                font-size: 30px;
+                padding-top: 40px;
+                padding-bottom: 15px;
+            }
+
+            .aboutdesigner p {
+                font-size: 12px;
+                padding-bottom: 20px;
+            }
+
+            .aboutdesigner h2 {
+                font-size: 12px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                padding-left: 200px;
+                /* padding-right: 1px; */
+                line-height: 1.4;
+            }
+
+            .aboutdesigner h3 {
+                font-size: 12px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+                padding-left: 200px;
+                padding-right: 0px;
+                line-height: 1.4;
+            }
+
+            .contactus h1 {
+                font-size: 30px;
+                padding-top: 35px;
+                padding-bottom: 35px;
+            }
+
+            .contactus h2 {
+                font-size: 12px;
+                padding-top: 35px;
+                padding-bottom: 20px;
+                padding-left: 200px;
+                padding-right: 0px;
+                line-height: 1.4;
+            }
+
+            .contactus p {
+                font-size: 12px;
+                padding-bottom: 35px;
+                padding-left: 200px;
+                padding-right: 0px;
+                line-height: 1.4;
+            }
+
+            .FAQ h1 {
+                font-size: 30px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+
+            .FAQ h2 {
+                font-size: 12px;
+                padding-bottom: 15px;
+                padding-top: 35px;
+                line-height: 1.4;
+            }
+
+            .FAQ p {
+                font-size: 12px;
+                padding-bottom: 15px;
+                line-height: 1.4;
+            }
+
+        }
+
+        /* Full Screen */
+        @media (min-width: 1000px) {
+            .container {
+                max-width: 1400px;
+            }
+        }
+    </style>
 </head>
 
 <body>
