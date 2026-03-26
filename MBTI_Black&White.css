@@ -10,6 +10,7 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 40px;
+    padding-bottom: 40px;
 }
 
 body {
@@ -400,29 +401,61 @@ body {
     text-decoration: underline;
 }
 
-.references h1 {
+
+.site-footer h1 {
     font-size: 10px;
     font-weight: bold;
     text-align: right;
     padding-top: 0.5em;
 }
 
-.references p {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding-top: 10px;
-    padding-bottom: 1px;
-    font-size: 10px;
-    /* padding: 50px; */
+.column h2 {
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: left;
+    line-height: 1.6;
     color: #000000;
+    max-width: 380px;
 }
 
-.references a {
+.column {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    font-size: 10px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 100px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    color: #000000;
+    font-weight: lighter;
+}
+
+.site-footer h4 {
+    font-size: 10px;
+    color: #000000;
+    font-weight: lighter;
+    text-align: left;
+    padding-top: 1em;
+    
+}
+
+.footer-column a {
     text-decoration: none;
     color: inherit;
 }
 
-.references a:hover {
+.footer-column a:hover {
     text-decoration: underline;
+    color: #ffffff;
 }

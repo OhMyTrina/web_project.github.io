@@ -77,6 +77,23 @@ body {
     padding-right: 20px;
 }
 
+.about-window a {
+    font-size: 16px;
+    height: 45px;
+    color: #1e4538;
+    border: transparent;
+    background-color: transparent;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    transition: transform 0.3s ease
+}
+
+.about-window a:hover {
+    color: #ffffff;
+    background-color: #1e4538;
+}
+
 
 .popup-container {
     position: relative;
@@ -86,12 +103,13 @@ body {
 .popup-container button {
     font-size: 16px;
     font-family: optima, sans-serif;
+    font-weight: bold;
     width: 160px;
     height: 45px;
     color: #1e4538;
     border: transparent;
     background-color: transparent;
-    border-left: 1.5px solid #1e4538;
+    border-left: 1px solid #1e4538;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +128,7 @@ body {
     background-color: #1e4538;
     border: 1px solid #1e4538;
     width: 500px;
-    height: auto;
+    height: 200px;
     padding: 10px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
     z-index: 10;
@@ -143,7 +161,8 @@ body {
 
 .popup-window a:hover {
     text-decoration: underline;
-    color: #458d6b}
+    color: #458d6b
+}
 
 
 .title h1 {
@@ -267,27 +286,25 @@ body {
 }
 
 .button-container {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 35px;
     text-align: right;
     align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.button-container:hover {
-    transform: scale(1.1);
 }
 
 .external-btn {
     color: #1e4538;
-    padding: 11px 0;
+    display: inline-block;
+    padding: 1px 0;
     text-align: center;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
     border: none;
+    transition: transform 0.3s ease;
 }
 
 .external-btn:hover {
     color: #ffffff;
+    transform: scale(1.3);
 }
