@@ -240,23 +240,25 @@ body {
 }
 
 .good h2 {
+    position: sticky;
+    top: 150px;
     font-size: 25px;
     padding-left: 167px;
     padding-right: 140px;
     padding-top: 40px;
-    padding-bottom: 35px;
-    border-bottom: 0.7px solid #195970;
-
+    padding-bottom: 15px;
+    /* border-bottom: 0.7px solid #4e4736; */
 }
 
 .bad h2 {
+    position: sticky;
+    top: 150px;
     font-size: 25px;
     padding-left: 139px;
     padding-right: 140px;
     padding-top: 40px;
     padding-bottom: 35px;
-    border-bottom: 0.7px solid #195970;
-
+    /* border-bottom: 0.7px solid #4e4736; */
 }
 
 
