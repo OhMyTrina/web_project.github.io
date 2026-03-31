@@ -131,12 +131,8 @@ body {
 
 .letter-e,
 .letter-i,
-.letter-s,
-.letter-n,
 .letter-t,
-.letter-f,
-.letter-j,
-.letter-p {
+.letter-f {
     width: 100px;
     height: 105px;
     color: #fff;
@@ -154,52 +150,97 @@ body {
     /* border-radius: 200px; */
 }
 
+.letter-s,
+.letter-n,
+.letter-j,
+.letter-p {
+    width: 100px;
+    height: 105px;
+    color: #000000;
+    mix-blend-mode: multiply;
+    background-color: #fff;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
 .letter-e:hover {
     background-color: #fff0ae;
     color: #ffb20c;
     transform: scale(1.08);
+    border-color: #ffb20c;
+    border-style: double;
+    border-width: 3px;
 }
 
 .letter-i:hover {
     background-color: #fff0ae;
     color: #ffb20c;
     transform: scale(1.08);
+    border-color: #ffb20c;
+    border-style: double;
+    border-width: 3px;
 }
 
 .letter-s:hover {
-    background-color: #98d9a8;
+    background-color: #cbffc1;
     color: #1e2e45;
     transform: scale(1.08);
+    border-color: #1e2e45;
+    border-style: double;
+    border-width: 3px;
 }
 
 .letter-n:hover {
-    background-color: #98d9a8;
+    background-color: #b9edaf;
     color: #1e2e45;
     transform: scale(1.08);
+    border-color: #1e2e45;
+    border-style: double;
+    border-width: 3px;
 }
 
 .letter-t:hover {
     background-color: #97c4ff;
     color: #195970;
     transform: scale(1.08);
+    border-color: #195970;
+    border-style: double;
+    border-width: 3px;
 }
 
 .letter-f:hover {
     background-color: #97c4ff;
     color: #195970;
     transform: scale(1.08);
+    border-color: #195970;
+    border-style: double;
+    border-width: 3px;
 }
 
 .letter-j:hover {
     background-color: #c5bcff;
     color: #935dbc;
     transform: scale(1.08);
+    border-color: #935dbc;
+    border-style: double;
+    border-width: 3px;
 }
 
 .letter-p:hover {
     background-color: #c5bcff;
     color: #935dbc;
     transform: scale(1.08);
+    border-color: #935dbc;
+    border-style: double;
+    border-width: 3px;
 }
 
 .letter-group h1 {
@@ -446,7 +487,7 @@ body {
     color: #000000;
     font-weight: lighter;
     text-align: left;
-    padding-top: 1em; 
+    padding-top: 1em;
 }
 
 .footer-column a {
